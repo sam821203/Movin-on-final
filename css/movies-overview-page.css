@@ -1,0 +1,205 @@
+.content-section .mycard-height {
+    height: 384px;
+}
+
+.content-section .mycard .img-wrap {
+    max-width: 280px;
+    margin-bottom: 12px;
+    box-shadow: var(--box-shadow-black);
+    border-radius: var(--border-radius-4);
+    display: flex;
+    transition: .4s;
+}
+
+.content-section .mycard .img-wrap img{
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-radius: var(--border-radius-4);
+}
+
+.content-section .mycard .img-wrap:hover {
+    box-shadow: var(--box-shadow-white);
+}
+
+.content-section .mycard-info .rating .fa-star {
+    margin-right: 6px;
+}
+
+.content-section .movie-title {
+    overflow: hidden;
+    width: 65%;
+}
+
+.content-section .movie-title p span {
+    font-size: 1.25rem;
+    font-weight: 400;
+    width: 200px;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.content-section .movie-title span.sub-title-r {
+    display: inline-block;
+    padding-left: 0;
+    transition: .6s;
+    line-height: 100%;
+}
+
+.content-section .movie-title span.sub-title-r:hover {
+    -webkit-animation: marquee 6s linear infinite;    
+    animation: marquee 6s linear infinite;
+}
+
+/* Make it move */
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+
+.movies-tab-bar {
+    margin-top: 200px;
+    width: 100%;
+}
+
+.movies-tab-bar .playName {
+    color: #eee;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    width: fit-content;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.typesBorder{
+    justify-content: center;
+}
+
+.movies-tab-bar .playName {
+    color: #eee;
+    border: 1px solid #ccc;
+    padding: 10px 50px;
+    width: fit-content;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.movies-tab-bar .row {
+    margin: 0 auto;
+}
+
+.content-section .mycard {
+    margin-bottom: 48px;
+}
+
+.content-section p.italic-16 {
+    width: 85%;
+    color: rgb(145, 145, 145);
+    line-height: 140%;
+    font-size: 14px;
+}
+
+.content-section .rating span {
+    line-height: 120%;
+}
+
+.movies-tab-bar #myTab {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 96px;
+    border: none;
+    padding: 0;
+}
+
+.movies-tab-bar .nav-tabs .nav-item.show .nav-link, 
+.nav-tabs .nav-link.active {
+    color: white;
+    font-weight: 700;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid var(--brand-color);
+    font-size: 1.125rem;
+    box-shadow: 0px 16px 14px -20px var(--brand-color);
+}
+
+.movies-tab-bar .nav-link {
+    border-color: transparent;
+    display: block;
+    padding: 1rem 0.75rem;
+    color: white;
+    font-weight: 400;
+    /* transition: .3s ease-in-out; */
+}
+
+.movies-tab-bar .nav-link {
+    border-color: transparent;
+    display: block;
+    padding: 1rem 0.75rem;
+    color: white;
+    font-weight: 400;
+    /* transition: .3s ease-in-out; */
+}
+
+.movies-tab-bar .nav-tabs .nav-link:hover {
+    border-color: rgba(255,255,255,0);
+    transition: .3s ease-in-out;
+}
+
+.movies-tab-bar .nav-tabs .nav-link:focus {
+    /* border-color: rgba(255,255,255,0); */
+    border-bottom: 2px solid var(--brand-color);
+    transition: .3s ease-in-out;
+}
+
+.movies-tab-bar .tab-content {
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* ------------------------  小於 418px  ------------------------*/
+@media screen and (max-width: 418px) {
+
+    .movies-tab-bar {
+        margin-top: 96px;
+    }
+
+    .movies-tab-bar #myTab {
+        margin-bottom: 24px;
+    }
+
+    .content-section .mycard-height.col-6:nth-child(even) {
+        padding: 0 0 0 8px;
+    }
+
+    .content-section .mycard-height.col-6:nth-child(odd) {
+        padding: 0 8px 0 0;
+    }
+
+    .content-section .movie-title p {
+        line-height: 100%;
+        margin-bottom: 4px;
+    } 
+
+    .content-section .movie-title .sub-title-r {
+        font-size: 16px;
+        font-weight: 500;
+    } 
+
+    .content-section .mycard-height {
+        height: 304px;
+        overflow-y: hidden;
+        margin-bottom: 16px;
+    }
+
+    .content-section .mycard-info .rating .fa-star,
+    .content-section .mycard-info .rating span {
+        font-size: 14px;
+    }

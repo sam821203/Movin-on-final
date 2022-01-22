@@ -1,0 +1,460 @@
+body {
+    width: 100%;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--bg-color);
+}
+
+div button {
+    padding-top: 2px;
+    padding-bottom: 3px;
+    border-color: rgba(255,255,255,0.5);
+}
+
+li.seatCharts-legendItem {
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+}
+
+span.seatCharts-legendDescription {
+    margin-top: 2px;
+}
+
+input#Numseats {
+    width: 144px;
+    height: 32px;
+    margin-left: 8px;
+    margin-right: 16px;
+    color: white;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+}
+
+button#takeData {
+    width: 56px;
+    color: white;
+    margin-right: 16px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: rgba(255,255,255,0.25);
+}
+
+/* -----------------movie info section----------------- */
+.movie-info-section {
+    margin-top: 248px;
+}
+
+.movie-info-section .movie-info {
+    margin-bottom: 96px;
+}
+
+.movie-info-section .movie-info .movie-poster {
+    width: 25%;
+}
+
+.movie-info-section .movie-info .img-wrap {
+    display: flex;
+    border-radius: var(--border-radius-4);
+    box-shadow: var(--box-shadow-black);
+}
+
+.movie-info-section .movie-info .img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-radius: var(--border-radius-4);
+}
+
+.movie-info-section .content {
+    width: 75%;
+    padding-left: 32px;
+}
+
+.movie-info-section .content span {
+    display: inline-block;
+}
+
+.movie-info-section .pg-rate {
+    border: 1px solid #E2A526;
+    border-radius: var(--border-radius-50);
+    padding: 4px 12px;
+    opacity: var(--opacity-75);
+    margin-bottom: 16px;
+}
+
+.movie-info-section .title-tc {
+    margin-bottom: 4px;
+}
+
+.movie-info-section .title-en {
+    opacity: var(--opacity-50);
+}
+
+.movie-info-section .movie-date {
+    padding-left: 112px;
+    padding-right: 112px;
+    margin-bottom: 32px;
+}
+
+.movie-info-section .movie-division {
+    margin-bottom: 96px;
+}
+
+.movie-info-section .content p {
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+.movie-info-section .content .movie-length,
+.movie-info-section .content .movie-director {
+    opacity: var(--opacity-90);
+}
+
+.movie-info-section .content .length-data,
+.movie-info-section .content .director-data {
+    opacity: var(--opacity-75);
+}
+
+p#notification {
+    margin-top: 4px;
+}
+
+/* -----------------seat dataviz section----------------- */
+.seat-dataviz {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.seat-dataviz .selected,
+.seat-dataviz .available,
+.seat-dataviz .occupied {
+    display: flex;
+    align-items: center;
+}
+
+.seat-dataviz .selected .img-wrap {
+    width: 62px;
+    margin-right: -8px;
+    display: flex;
+}
+
+.seat-dataviz .available .img-wrap {
+    width: 24px;
+    margin-right: 8px;
+    opacity: var(--opacity-25);
+    display: flex;
+}
+
+.seat-dataviz .occupied .img-wrap {
+    width: 24px;
+    margin-right: 8px;
+    opacity: var(--opacity-10);
+    display: flex;
+}
+
+.seat-dataviz .img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center center;
+}
+
+.seat-dataviz .time-left {
+    color: var(--success-color);
+    font-weight: 500;
+    text-shadow: var(--text-shadow-green);
+}
+
+.seat-dataviz .time-left-status {
+    margin-top: 4px;
+    padding-right: 92px;
+}
+
+/* -----------------screen section----------------- */
+.booking-seat-section .screen span {
+    opacity: var(--opacity-75);
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.booking-seat-section .screen .img-wrap {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.booking-seat-section .screen .img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.booking-seat-section .screen .col-12.img-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+/* -----------------booking seat section----------------- */
+div.seat-demo {
+    margin-right: 8px;
+}
+
+div.seatCharts-cell.seat-demo {
+    width: 24px;
+    height: 24px;
+}
+
+.booking-seat-section .seats-area .seats {
+    display: flex;
+    justify-content: space-between;
+}
+
+.seats-row-m .col-2,
+.seats-row-m .col-8 {
+    padding: 0;
+}
+
+.booking-seat-section .seats .seat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking-seat-section .seats-area .seats-row-m .img-wrap {
+    width: 34px;
+    margin: 0 4px;
+    cursor: pointer;
+}
+
+.booking-seat-section .seats-area .seats-row-m .img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center center;
+    opacity: var(--opacity-25);
+}
+
+.booking-seat-section .seats-row-num {
+    margin-bottom: 20px;
+}
+
+.booking-seat-section .seats-row {
+    margin: 20px 0;
+}
+
+.booking-seat-section .seats-row-l {
+    font-size: 20px;
+    text-align: center;
+    opacity: var(--opacity-75);
+}
+
+.booking-seat-section .seats-row-m {
+    padding: 0 32px;
+}
+
+/* -----------------ticket detail----------------- */
+.booking-seat-section .ticket-detail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.booking-seat-section .ticket-detail i {
+    margin-right: 12px;
+}
+
+.booking-seat-section .seat-column {
+    width: 42px;
+    display: flex;
+    justify-content: center;
+    opacity: var(--opacity-75);
+}
+
+.booking-seat-section .ticket-detail .detail-title {
+    opacity: var(--opacity-90);
+}
+
+.booking-seat-section .ticket-detail .devision,
+.booking-seat-section .ticket-detail .date,
+.booking-seat-section .ticket-detail .cinema,
+.booking-seat-section .ticket-detail .type,
+.booking-seat-section .ticket-detail .showtime,
+.booking-seat-section .ticket-detail .my-seat {
+    opacity: var(--opacity-50);
+}
+
+.booking-seat-section .ticket-detail .fa-map-marker-alt {
+    font-size: 20px;
+}
+
+.booking-seat-section .ticket-detail .fa-calendar-alt {
+    font-size: 18px;
+}
+
+.booking-seat-section .ticket-detail .fa-kaaba {
+    font-size: 16px;
+}
+
+.booking-seat-section .ticket-detail .fa-clock {
+    font-size: 18px;
+}
+
+.booking-seat-section .ticket-detail .img-wrap {
+    width: 18px;
+    margin-right: 12px;
+    display: flex;
+}
+
+.booking-seat-section .ticket-detail .img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+/* -----------------btn area----------------- */
+.seats-area .btn-area {
+    margin-top: 48px;
+    display: flex;
+}
+
+.seats-area .btn-area a {
+    border-radius: var(--border-radius-4);
+    margin-right: 12px;
+    padding: 8px 24px;
+    color: white;
+}
+
+.seats-area .btn-area a:nth-child(1) {
+    background-color: var(--brand-color);
+    box-shadow: var(--box-shadow-red);
+}
+
+.booking-details {
+    float: left;
+    text-align: left;
+    margin-left: 35px;
+    font-size: 12px;
+    position: relative;
+    height: 401px;
+}
+
+.booking-details h2 {
+    margin: 25px 0 20px 0;
+    font-size: 17px;
+}
+
+.booking-details h3 {
+    margin: 5px 5px 0 0;
+    font-size: 14px;
+}
+
+div.seatCharts-cell {
+    color: white;
+    height: 28px;
+    width: 28px;
+}
+
+div.seatCharts-seat {
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+div.seatCharts-row {
+    height: 44px;
+}
+
+div.seatCharts-seat.available {
+    background: url(images/movie_seat.svg);
+    background-position: center;
+    background-size: cover;
+    opacity: var(--opacity-25);
+}
+
+div.seatCharts-seat.available.first-class {
+    /* 	background: url(vip.png); */
+    /* background-color: #3a78c3; */
+    background-color: #121212;
+}
+
+div.seatCharts-seat.focused {
+    background-color: #76B474;
+}
+
+div.seatCharts-seat.selected {
+    background: var(--brand-color);
+    background-position: center;
+    background-size: cover;
+    opacity: var(--opacity-90);
+}
+
+div.seatCharts-seat.unavailable {
+    background: url(images/movie_seat.svg);
+    background-position: center;
+    background-size: cover;
+    opacity: var(--opacity-10);
+}
+
+div.seatCharts-container {
+    width: 100%;
+    padding: 0 72px;
+    float: left;
+}
+
+ul.seatCharts-legendList {
+    display: flex;
+    line-height: 100%;
+    align-items: center;
+    padding-left: 92px;
+    margin-bottom: 24px;
+}
+
+div.seatCharts-space {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+ul#selected-seats {
+    list-style: none;
+    max-height: 110px;
+    padding-right: 0px;
+    overflow-y: scroll;
+    width: 100%;
+    color: rgba(255,255,255,0.9);
+}
+
+.booking-seat-section .divide-line {
+    margin-top: 24px;
+    margin-bottom: 12px;
+    border-top: 1px solid rgba(255,255,255,0.25);
+}
+
+.booking-seat-section .seats-area div.sub-title-b {
+    margin-bottom: 24px;
+}
+
+.booking-seat-section span#total {
+    display: flex;
+    justify-content: end;
+    padding-right: 10px;
+}
+
+.sentSeat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.total-custom {
+    font-weight: 700;
+    padding-top: 8px;
+}

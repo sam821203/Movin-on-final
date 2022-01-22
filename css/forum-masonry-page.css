@@ -1,0 +1,423 @@
+body {
+    background: url("images/forum_masonry_page/masonry_bg_img.jpg") top center no-repeat;
+    background-size: contain;
+    background-color: var(--bg-color);
+    width: 100%;
+}
+
+.masonry-title-section {
+    width: 100%;
+    height: 632px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.masonry-title-section .title-tc {
+    font-size: 48px;
+    font-weight: 700;
+    opacity: .9;
+    margin-bottom: 8px;
+    letter-spacing: 0.25px;
+}
+
+.masonry-title-section .title-en {
+    font-size: 20px;
+    letter-spacing: 1.1px;
+    opacity: .5;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.masonry-title-section .deco-line {
+    width: 40px;
+    height: 1px;
+    background-color: rgba(255,255,255,0.5);
+}
+
+/* ----------------------- masonry articles section ----------------------- */
+.masonry-articles-section img, 
+.masonry-articles-section video {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+/* .masonry-articles-section p:not(:last-child) {
+  margin: 0 0 1em;
+} */
+
+.masonry-articles-section .wrapper { 
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1.5em;
+}
+
+.masonry-articles-section { 
+    padding: 0 72px;
+}
+
+.masonry-articles-section .movie-type-wrap {
+    background-color: rgba(255,255,255,0.25);
+    border-radius: var(--border-radius-50);
+    padding: 0 48px;
+    width: 300px;
+    height: 64px;
+    width: fit-content;
+}
+
+.masonry-articles-section .cat-tag-selector {
+    display: none;
+}
+
+.masonry-articles-section .movie-type-wrap span.type {
+    display: inline-block;
+    padding: 3px 19px 5px 20px;
+    background-color: rgba(18,18,18,0.5);
+    border-radius: var(--border-radius-50);
+    color: rgba(255, 255, 255, 0.75);
+} 
+
+.masonry-articles-section .filter i {
+    font-size: 1.5rem;
+    opacity: var(--opacity-90);
+    margin-bottom: 24px;
+    margin-right: 2px;
+}
+
+.masonry-articles-section .subtitle {
+    margin-bottom: 64px;
+}
+
+.masonry-articles-section .masonry-content .masonry-content-text {
+    padding: 0px 32px 20px 32px;
+    margin-bottom: 32px;
+}
+
+.masonry-articles-section .masonry-content-text span {
+    display: inline-block;
+}
+
+.masonry-articles-section .masonry-content-text span.article-date {
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 500;
+    margin-right: 16px;
+}
+
+.masonry-articles-section .masonry-content-text span.author-name {
+    color: rgba(41,171,235,0.75);
+    margin-left: 4px;
+}
+
+/* original CSS */
+.masonry-wrapper {
+    max-width: 1920px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.masonry {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(100px,1fr));
+    grid-gap: 16px;
+    grid-auto-rows: 0;
+    position: relative;
+}
+
+.masonry-item, .masonry-content {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.masonry-item .img-gradien-20 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(rgba(38,38,38,0), rgba(38,38,38,1));
+    opacity: .20;
+}
+
+.masonry-item .img-filter-50 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(38,38,38,0.25);
+    opacity: .5;
+}
+
+.masonry-item {
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, .3));
+  transition: filter .25s ease-in-out;
+}
+
+.masonry-item:hover {
+  filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, .3));
+}
+
+.masonry-item {
+    background-color: var(--card-color);
+    position: relative;
+}
+
+/* .actphoto {
+    width: 100%;
+} */
+
+.masonry-item .article-tag {
+    width: auto;
+    position: absolute;
+    top: 16px;
+    left: 24px;
+    display: flex;
+}
+
+.masonry-item .article-tag .article-cat {
+    padding: 5px 20px 2px 20px;
+    background-color: rgba(18,18,18,0.5);
+    border: 1px solid #fff;
+    border-radius: var(--border-radius-50);
+    text-align: center;
+    margin-right: 12px;
+    line-height: 140%;
+}
+
+.masonry-item .article-tag .spoiler-tag {
+    color: var(--bg-color);
+    line-height: 100%;
+    background-color: var(--brand-color);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--border-radius-50-percent);
+    padding-top: 4px;
+}
+
+.masonry-item .article-avatar {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -30px;
+    padding-right: 28px;
+}
+
+.masonry-item .avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--border-radius-50-percent);
+  overflow: hidden;
+  box-shadow: var(--box-shadow-avatar-sm);
+}
+
+.masonry-item .avatar>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.masonry-item .article-like {
+    position: absolute;
+    bottom: 0;
+    padding: 12px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #292929;
+    border-radius: 0 0 8px 8px;   
+}
+
+.masonry-item .article-like .like-btn {
+    padding-left: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.masonry-item .article-like .comment {
+    display: flex;
+    align-items: center;
+    padding-right: 32px;
+}
+
+.masonry-item .overflow-gradient {
+    position: absolute;
+    bottom: 49.59px;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, rgba(18,18,18,0), rgba(18,18,18,0.65));
+}
+
+.masonry-item .spoiler-free-tag {
+    padding-top: 4px;
+    background-color: rgba(59,59,59,0.75);
+    color:rgba(255,255,255,0.25);
+}
+
+.masonry-item .img-wrap {
+    max-width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.masonry-item .img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 8px 8px 0 0;
+}
+
+.masonry-item .like-btn>p {
+    margin-left: 8px;
+}
+
+.masonry-item .comment>p {
+    margin-left: 8px;
+} 
+
+.masonry-item .masonry-title, .masonry-description {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: rgba(255,255,255,0.5);
+    line-height: 150%;
+}
+
+.masonry-item .masonry-title {
+    padding: 8px 0 12px 0;
+    color: rgba(255,255,255,0.9);
+}
+
+.masonry-item .masonry-description {
+    color: rgba(255,255,255,0.5);
+    /* height: 96px; */
+    margin-bottom: 40px;
+}
+
+/* =================================== @media =================================== */
+/* ============================================================================== */
+/* ------------------------  小於 1023px  ------------------------*/
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+    .masonry {
+      grid-template-columns: repeat(2, minmax(100px,1fr));
+    }
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    .masonry {
+      grid-template-columns: repeat(4, minmax(100px,1fr));
+    }
+  }
+
+/* ------------------------  小於 418px  ------------------------*/
+@media screen and (max-width: 418px) {
+
+    body {
+        background: url("images/forum_masonry_page/masonry_bg_img_418-1.jpg") top center no-repeat;
+        background-size: contain;
+        background-color: var(--bg-color);
+        width: 100%;
+    }
+
+    /* masonry title section */
+    .masonry-title-section {
+        width: 100%;
+        height: 336px;
+        padding-top: 184px;
+    }
+
+    .masonry-title-section .title-tc {
+        font-size: 34px;
+        font-weight: 700;
+        opacity: .9;
+        margin-bottom: 4px;
+    }
+    
+    .masonry-title-section .title-en {
+        font-size: 16px;
+        letter-spacing: 0.8px;
+        opacity: .5;
+        font-weight: 300;
+        font-style: italic;
+    }
+    
+    .masonry-title-section .deco-line {
+        width: 32px;
+    }
+
+    /* masonry articles section */
+    .masonry {
+        grid-auto-rows: unset;
+    }
+
+    .masonry-item .img-wrap {
+        height: 240px;
+    }
+
+    .masonry-articles-section { 
+        /* margin-top: 200px;  */
+        padding: 0 16px;
+    }
+
+    .masonry-articles-section .cat-tag-selector {
+        display: block;
+    }
+
+    .masonry-articles-section .movie-type-wrap {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 8px;
+        background-color: transparent;
+    }
+
+    .masonry-articles-section .movie-type-wrap .type {
+        margin-bottom: 12px;
+    }
+
+    .masonry-articles-section .cat-tag-selector {
+        margin-bottom: 16px;
+    }
+
+    .masonry-articles-section .cat-tag-selector i {
+        font-size: 1.125rem;
+        opacity: var(--opacity-90);
+        margin-right: 8px;
+    }
+
+    .masonry-articles-section .filter i {
+        margin-bottom: 12px;
+    }
+    
+    .masonry-articles-section .movie-type-wrap span.type {
+        background-color: rgba(255, 255, 255, 0.25);
+        color: white;
+    } 
+
+    .masonry-articles-section .article-tag {
+        width: 26px;
+        width: 100%;
+        height: 26px;
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        display: flex;
+    }
+
+    .masonry-item .article-tag .spoiler-tag,
+    .masonry-item .article-tag .spoiler-free-tag {
+        width: 26px;
+        height: 26px;
+        padding-bottom: 2px;
+    }
+
+    .masonry-articles-section .article-tag .article-cat {
+        height: fit-content;
+    }
+}
+
+    

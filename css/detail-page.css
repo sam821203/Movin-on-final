@@ -1,0 +1,1048 @@
+body {
+    background-image: url("images/detail_page/bg_img/bg_img_gradient_1200.jpg");
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+/*----- fixed icon ticket -----*/
+.fixed-icon-ticket {
+    width: 56px;
+    height: 56px;
+    border-radius: var(--border-radius-50-percent);
+    background-color: var(--brand-color);
+    box-shadow: var(--box-shadow-red);
+    position: fixed;
+    right: 32px;
+    bottom: 48px;
+    z-index: 9998;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.fixed-icon-ticket .img-wrap {
+    width: 24px;
+    height: 24px;
+}
+
+.fixed-icon-ticket .img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center center;
+}
+
+.related-articles-section .fa-chevron-right {
+    opacity: var(--opacity-90);
+    font-size: 16px;
+}
+
+/* -----------------movie detail section----------------- */
+.movie-detail-section {
+    margin-top: 160px;
+}
+
+.movie-detail-section .social-media {
+    margin-bottom: 32px;
+}
+
+.movie-detail-section .social-media i {
+    font-size: 2.125rem;
+    opacity: var(--opacity-90);
+}
+
+.movie-detail-section .movie-poster .img-wrap {
+    width: 100%;
+    border-radius: var(--border-radius-4);
+}
+
+.movie-detail-section .movie-poster .img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-radius: var(--border-radius-4);
+    box-shadow: var(--box-shadow-black);
+}
+
+.movie-detail-section .content {
+    padding-left: 32px;
+}
+
+.movie-detail-section .content span {
+    display: inline-block;
+}
+
+.movie-detail-section .green {
+    border: 1px solid var(--age0);
+    border-radius: var(--border-radius-50);
+    padding: 4px 12px;
+    margin-bottom: 8px;
+}
+
+.movie-detail-section .blue {
+    border: 1px solid var(--age6);
+    border-radius: var(--border-radius-50);
+    padding: 4px 12px;
+    margin-bottom: 8px;
+}
+
+.movie-detail-section .yellow {
+    border: 1px solid var(--age12);
+    border-radius: var(--border-radius-50);
+    padding: 4px 12px;
+    margin-bottom: 8px;
+}
+
+.movie-detail-section .red{
+    border: 1px solid var(--age18);
+    border-radius: var(--border-radius-50);
+    padding: 4px 12px;
+    margin-bottom: 8px;
+}
+
+.movie-detail-section .rating {
+    margin-bottom: 32px;
+}
+
+.movie-detail-section .rating i {
+    font-size: 0.875rem;
+}
+
+.movie-detail-section .title-tc {
+    margin-bottom: 4px;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.movie-detail-section .title-en {
+    margin-bottom: 16px;
+    opacity: var(--opacity-50);
+    font-style: italic;
+    font-size: 20px;
+}
+
+.movie-detail-section .reputation {
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.movie-detail-section .reputation .img-wrap1 {
+    width: 24px;
+    margin-right: 8px;
+}
+
+.movie-detail-section .reputation .img-wrap2 {
+    width: 48px;
+    margin-right: 8px;
+    margin-top: 4px;
+}
+
+.movie-detail-section .reputation .img-wrap1 img,
+.movie-detail-section .reputation .img-wrap2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center center;
+}
+
+.movie-detail-section .content .sub-title-r {
+    margin-bottom: 8px;
+    opacity: var(--opacity-90);
+    font-size: 20px;
+}
+
+.movie-detail-section .content p {
+    font-size: 20px;
+}
+
+.movie-detail-section .content .release-date,
+.movie-detail-section .content .movie-length,
+.movie-detail-section .content .movie-director {
+    opacity: var(--opacity-90);
+    margin-bottom: 4px;
+}
+
+.movie-detail-section .content .date-data,
+.movie-detail-section .content .length-data,
+.movie-detail-section .content .director-data {
+    opacity: var(--opacity-75);
+}
+
+.movie-detail-section .cat-tags {
+    margin-bottom: 56px;
+    width: 100%;
+    display: flex;
+}
+
+.movie-detail-section .cat-tags .cat-tag {
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    border-radius: var(--border-radius-50);
+    margin-right: 12px;
+    margin-bottom: 32px;
+}
+
+.movie-detail-section .description-title {
+    margin-bottom: 32px;
+}
+
+.movie-detail-section .description {
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.75);
+    margin-bottom: 64px;
+    font-size: 20px;
+    opacity: var(--opacity-90);
+}
+
+.movie-detail-section .description p {
+    overflow: auto;
+    height: 152px;
+}
+
+.movie-detail-section button span {
+    line-height: 110%;
+}
+
+.movie-detail-section .booking-trailer {
+    display: flex;
+}
+
+.movie-detail-section .booking-trailer .img-wrap img {
+    object-fit: cover;
+    object-position: center center;
+}
+
+/* -----------------related articles section----------------- */
+.related-articles-section .arti-cat-tag {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: var(--border-radius-50);
+    background-color: var(--bg-color);
+    margin-right: 16px;
+}
+
+.related-articles-section .articles-1920 {
+    width: 100%;
+    margin: 0px;
+}
+
+.related-articles-section .articles-1920 .article-light,
+.related-articles-section .articles-1920 .article-dark {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.related-articles-section .article-light .spoiler-tag,
+.related-articles-section .article-light .spoiler-free-tag,
+.related-articles-section .article-dark .spoiler-tag,
+.related-articles-section .article-dark .spoiler-free-tag {
+    padding-top: 4px;
+}
+
+/* .related-articles-section .articles-1920 .article-light .sub-title-r,
+.related-articles-section .articles-1920 .article-dark .sub-title-r {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+} */
+
+.related-articles-section .articles-1920 .article-light {
+    padding: 16px 32px;
+    margin-bottom: 24px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: var(--border-radius-8);
+    box-shadow: var(--box-shadow-card-sm);
+}
+
+.related-articles-section .articles-1920 .article-dark {
+    padding: 16px 32px;
+    margin-bottom: 24px;
+    background-color: rgba(255, 255, 255, 0.02);
+    border-radius: var(--border-radius-8);
+    box-shadow: var(--box-shadow-card-sm);
+}
+
+.related-articles-section .time-stamp {
+    opacity: var(--opacity-50);
+}
+
+.related-articles-section .articles-xl ul,
+.related-articles-section .articles-md ul {
+    width: 100%;
+}
+
+.related-articles-section .articles-1920 .col-xl-6:nth-child(even) {
+    padding-right: 0;
+}
+
+.related-articles-section .articles-1920 .col-xl-6:nth-child(odd) {
+    padding-left: 0;
+}
+
+/* -----------------actors list section----------------- */
+.actors-list-section {
+    width: 100%;
+}
+
+.actors-list-section .subtitle .sub-title-r {
+    opacity: var(--opacity-75);
+}
+
+.actors-list-section .container-fluid {
+    overflow: hidden;
+}
+
+/* carousel */
+.actors-list-section .wrap {
+    max-width: 1920px;
+    height: 640px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.actors-list-section .next-btn,
+.actors-list-section .prev-btn {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    z-index: 3999;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.actors-list-section .next-btn {
+    right: 0px;
+    justify-content: flex-end;
+    padding-left: 240px;
+    padding-right: 40px;
+    background-image: linear-gradient(to right, rgba(18, 18, 18, 0), rgba(18, 18, 18, 1));
+}
+
+.actors-list-section .prev-btn {
+    left: 0px;
+    padding-left: 40px;
+    padding-right: 240px;
+    background-image: linear-gradient(to right, rgba(18, 18, 18, 1), rgba(18, 18, 18, 0));
+}
+
+.actors-list-section .next-btn .img-wrap,
+.actors-list-section .prev-btn .img-wrap {
+    width: 48px;
+    height: 36px;
+}
+
+.actors-list-section .next-btn .img-wrap img,
+.actors-list-section .prev-btn .img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    opacity: var(--opacity-90);
+}
+
+.actors-list-section .carousel-wrap {
+    width: 2660px;
+    display: flex;
+    justify-content: space-between;
+    transform: translateX(-266px);
+    transition: .4s;
+}
+
+.actors-list-section .carousel-wrap span {
+    display: block;
+}
+
+.actors-list-section .img-wrap {
+    display: flex;
+    width: 234px;
+    height: 546px;
+    overflow: hidden;
+    position: relative;
+    border-radius: var(--border-radius-4);
+    margin: 0 16px 16px 16px;
+    opacity: .75;
+}
+
+.actors-list-section .img-wrap img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+    border-radius: var(--border-radius-4);
+}
+
+.actors-list-section li {
+    position: relative;
+}
+
+.actors-list-section .actor-name {
+    text-align: center;
+}
+
+.actors-list-section .actor-name-tc1,
+.actors-list-section .actor-name-en1,
+.actors-list-section .actor-name-tc2,
+.actors-list-section .actor-name-en2,
+.actors-list-section .actor-name-tc3,
+.actors-list-section .actor-name-en3,
+.actors-list-section .actor-name-tc4,
+.actors-list-section .actor-name-en4,
+.actors-list-section .actor-name-tc5,
+.actors-list-section .actor-name-en5,
+.actors-list-section .actor-name-tc6,
+.actors-list-section .actor-name-en6,
+.actors-list-section .actor-name-tc7,
+.actors-list-section .actor-name-en7,
+.actors-list-section .actor-name-tc8,
+.actors-list-section .actor-name-en8 {
+    text-decoration: none;
+    -webkit-transition: all 1s;
+    transform: translateY(40%);
+    transition: all 1s;
+    opacity: 0.2;
+}
+
+.actors-list-section .image-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.actors-list-section li:hover img {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.actors-list-section li:hover .image-hover {
+    opacity: 1;
+}
+
+.actors-list-section li:hover .actor-name-tc1,
+.actors-list-section li:hover .actor-name-en1 {
+    top: 40px;
+    transform: translateY(60%);
+    opacity: 0;
+}
+
+.actors-list-section .character-name-tc1,
+.actors-list-section .character-name-en1 {
+    text-decoration: none;
+    -webkit-transition: all 1s;
+    transform: translateY(-120%);
+    transition: all 1s;
+    opacity: 0;
+}
+
+.actors-list-section li:hover .character-name-tc1,
+.actors-list-section li:hover .character-name-en1 {
+    top: 50px;
+    transform: translateY(-190%);
+    opacity: 1;
+}
+
+.actors-list-section .actor-name-tc1,
+.actors-list-section .character-name-tc1 {
+    margin-bottom: 8px;
+}
+
+/* -----------------movie stills section----------------- */
+.movie-stills-section .movie-stills {
+    margin: 32px 0 0 0;
+    position: relative;
+}
+
+.movie-stills-section .imgs-demo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-radius: var(--border-radius-4);
+}
+
+.movie-stills-section .hall-screen {
+    margin: 0 auto;
+    height: 752px;
+    width: 1344px;
+    background-image: url(images/detail_page/movie-stills/movie_still_img6.jpg);
+    overflow: hidden;
+    /* transform: perspective(1000px) rotateX(-30deg); */
+    /* box-shadow: 0 40px 55px -17px rgb(255 255 255 / 20%); */
+    border-radius: var(--border-radius-8);
+}
+
+.movie-stills {
+    position: relative;
+}
+
+.movie-stills-section .hall-screen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: var(--border-radius-8);
+}
+
+.movie-stills-carousel {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.movie-stills-carousel .carousel-wrap {
+    width: 1114px;
+    display: flex;
+    justify-content: space-between;
+    transform: translateX(0px);
+    transition: .4s;
+}
+
+.movie-stills-carousel .carousel-wrap .img-wrap {
+    width: 218px;
+    height: 122px;
+    display: flex;
+    justify-content: space-between;
+    transform: translateX(0px);
+    border-radius: var(--border-radius-4);
+    transition: .4s;
+    margin: 16px 8px 14px 8px;
+}
+
+.movie-stills-carousel .carousel-wrap .img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-radius: var(--border-radius-4);
+    filter: grayscale(0);
+}
+
+.movie-stills-section .movie {
+    background: rgba(18, 18, 18, 0.5);
+    background-repeat: no-repeat;
+}
+
+.movie-stills-section .movie-frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.movie-stills-section .movie-frame img {
+    max-width: 100%;
+    border-radius: 2px;
+}
+
+.movie-stills-section .next-btn,
+.movie-stills-section .prev-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3999;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.movie-stills-section .next-btn {
+    right: 0px;
+    justify-content: flex-end;
+    padding-left: 96px;
+    padding-right: 16px;
+    background-image: linear-gradient(to right, rgba(18, 18, 18, 0), rgba(18, 18, 18, 1));
+}
+
+.movie-stills-section .prev-btn {
+    left: 0px;
+    padding-left: 16px;
+    padding-right: 96px;
+    background-image: linear-gradient(to right, rgba(18, 18, 18, 1), rgba(18, 18, 18, 0));
+}
+
+.movie-stills-section .next-btn .img-wrap,
+.movie-stills-section .prev-btn .img-wrap {
+    width: 48px;
+    height: 36px;
+}
+
+.movie-stills-section .next-btn .img-wrap img,
+.movie-stills-section .prev-btn .img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    opacity: var(--opacity-90);
+}
+
+/* =================================== @media =================================== */
+/* ============================================================================== */
+
+/* ------------------------  小於 1344px  ------------------------*/
+@media screen and (max-width: 1344px) {}
+
+/* ------------------------  小於 1200px  ------------------------*/
+@media screen and (max-width: 1200px) {
+
+    .related-articles-section .subtitle,
+    .actors-list-section .subtitle,
+    .movie-stills-section .subtitle {
+        padding: 0;
+    }
+
+    .movie-detail-section .movie-info {
+        margin-bottom: 32px;
+        padding: 0;
+    }
+
+    .movie-detail-section .movie-info .release-date i,
+    .movie-detail-section .movie-info .movie-length i,
+    .movie-detail-section .movie-info .movie-director i {
+        margin-right: 8px;
+    }
+
+    .movie-detail-section .description {
+        margin-bottom: 20px;
+    }
+
+    .movie-detail-section .description-title {
+        margin-bottom: 16px;
+    }
+
+    .movie-detail-section .description-title .section-header-b {
+        font-size: 1.25rem;
+    }
+
+    .movie-detail-section .content {
+        padding-left: 16px;
+    }
+
+    .movie-detail-section .title-tc {
+        font-size: 34px;
+    }
+
+    .movie-detail-section .title-en {
+        font-size: 16px;
+    }
+
+    .movie-detail-section .content {
+        padding-left: 32px;
+    }
+
+    .movie-detail-section .content .date-data,
+    .movie-detail-section .content .length-data,
+    .movie-detail-section .content .director-data {
+        font-size: 16px;
+        margin-right: 12px;
+    }
+
+    .movie-detail-section .content .fa-calendar-check,
+    .movie-detail-section .content .fa-clock,
+    .movie-detail-section .content .fa-video {
+        opacity: var(--opacity-90);
+    }
+
+    .movie-detail-section .cat-tags {
+        margin-bottom: 0;
+    }
+
+    .movie-detail-section .cat-tags .cat-tag {
+        font-size: 16px;
+        background-color: var(--card-color);
+        border: none;
+        border-radius: var(--border-radius-50);
+        padding: 4px 20px 6px 20px;
+        box-shadow: var(--box-shadow-card-sm);
+        margin-right: 12px;
+        opacity: var(--opacity-75);
+    }
+
+    .movie-detail-section .reputation {
+        margin-bottom: 0;
+    }
+
+    .movie-detail-section .description {
+        border-top: none;
+        font-size: 16px;
+        padding-top: 0;
+    }
+
+    .movie-detail-section .description p {
+        overflow: auto;
+    }
+
+    /* ----- related articles section ----- */
+    .articles-xl li:nth-child(even) {
+        padding: 16px 32px;
+        background-color: rgba(255, 255, 255, 0.02);
+        border-radius: var(--border-radius-8);
+    }
+
+    .articles-xl li:nth-child(odd) {
+        padding: 16px 32px;
+        background-color: rgba(255, 255, 255, 0.08);
+        border-radius: var(--border-radius-8);
+    }
+}
+
+/* ------------------------  小於 992px  ------------------------ */
+@media screen and (max-width: 992px) {
+
+    body {
+        background: url("images/detail_page/bg_img/bg_img_gradient_992.jpg") top center no-repeat;
+        background-size: contain;
+        background-color: var(--bg-color);
+    }
+
+    /* ----- section margin bottom ----- */
+    .movie-detail-section {
+        margin-top: 288px;
+    }
+
+    .movie-detail-section .cat-tags .cat-tag {
+        margin-top: 32px;
+    }
+
+    .movie-detail-section .content {
+        width: 100%;
+        padding-left: 16px;
+    }
+
+    .movie-detail-section .description-title {
+        margin-bottom: 16px;
+    }
+
+    .movie-detail-section .description {
+        margin-bottom: 40px;
+        font-size: 16px;
+    }
+}
+
+/* ------------------------  小於 768px  ------------------------*/
+@media screen and (max-width: 768px) {
+
+    .related-articles-section .subtitle {
+        align-items: end;
+    }
+
+    .movie-detail-section .movie-poster {
+        padding: 0;
+    }
+
+    .movie-detail-section .description-title {
+        margin-bottom: 8px;
+    }
+
+    .movie-detail-section .title-tc {
+        margin-bottom: 4px;
+        font-size: 34px;
+    }
+
+    .movie-detail-section .title-en {
+        margin-bottom: 16px;
+        font-size: 16px;
+    }
+
+    .movie-detail-section .rating {
+        font-size: 14px;
+    }
+
+    .movie-detail-section .content p {
+        margin-bottom: 4px;
+        font-size: 16px;
+    }
+
+    .movie-detail-section .cat-tags {
+        margin-bottom: 32px;
+    }
+
+    .movie-detail-section .cat-tags .cat-tag {
+        border: 1px solid rgba(255, 255, 255, 0.75);
+        border-radius: var(--border-radius-50);
+        padding: 6px 20px;
+        margin-right: 16px;
+        margin-bottom: 0;
+    }
+
+    .articles-md li:nth-child(even) {
+        width: 100%;
+        padding: 16px 0;
+        background-color: rgba(255, 255, 255, 0.02);
+        border-radius: var(--border-radius-8);
+        margin-bottom: 8px;
+    }
+
+    .articles-md li:nth-child(odd) {
+        width: 100%;
+        padding: 16px 0;
+        background-color: rgba(255, 255, 255, 0.08);
+        border-radius: var(--border-radius-8);
+        margin-bottom: 8px;
+    }
+}
+
+/* ------------------------  小於 418px  ------------------------*/
+@media screen and (max-width: 418px) {
+
+    body {
+        background: url("images/detail_page/bg_img/gradient.jpg") top center no-repeat;
+        background-size: contain;
+        background-color: var(--bg-color);
+    }
+
+    .fixed-icon-ticket {
+        display: flex;
+    }
+
+    .movie-detail-section .cat-tags .cat-tag {
+        font-size: 16px;
+        background-color: var(--card-color);
+        border: none;
+        border-radius: var(--border-radius-50);
+        padding: 4px 20px 6px 20px;
+        box-shadow: var(--box-shadow-card-sm);
+        margin-right: 12px;
+        opacity: var(--opacity-75);
+    }
+
+    .movie-detail-section button .img-wrap {
+        width: 20px;
+        height: 100%;
+        display: flex;
+    }
+
+    .movie-detail-section {
+        margin-top: 200px;
+    }
+
+    .movie-detail-section .movie-poster .img-wrap img {
+        width: 110px;
+        height: 156px;
+    }
+
+    .movie-detail-section .pg-rate {
+        border: none;
+        background-color: var(--age12);
+        border-radius: var(--border-radius-50-percent);
+        padding: 6px;
+        margin-bottom: 0;
+        font-size: 12px;
+    }
+
+    .movie-detail-section .title-tc {
+        line-height: 100%;
+    }
+
+    .movie-detail-section .rating {
+        margin-bottom: 16px;
+    }
+
+    .movie-detail-section .rating i {
+        font-size: 0.75rem;
+    }
+
+    .movie-detail-section .reputation {
+        display: none;
+    }
+
+    .movie-detail-section .content p {
+        margin-bottom: 4px;
+        font-size: 16px;
+    }
+
+    .movie-detail-section .cat-tags {
+        margin-bottom: 24px;
+    }
+
+    .movie-detail-section .cat-tags .cat-tag {
+        padding: 8px 16px;
+        margin-top: 16px;
+        margin-right: 12px;
+        font-size: 14px;
+    }
+
+    .movie-detail-section .content p {
+        margin-bottom: 2px;
+        font-size: 14px;
+    }
+
+    .movie-detail-section .title-en {
+        margin-bottom: 8px;
+    }
+
+    .movie-detail-section .movie-info p i {
+        font-size: 14px;
+    }
+
+    .movie-detail-section .movie-info p i.fa-clock {
+        font-size: 15px;
+    }
+
+    .movie-detail-section .movie-info p i.fa-calendar-check {
+        font-size: 16px;
+    }
+
+    .movie-detail-section .description p {
+        overflow: auto;
+        height: 72;
+        opacity: var(--opacity-90);
+    }
+
+    .movie-detail-section .content .date-data,
+    .movie-detail-section .content .length-data,
+    .movie-detail-section .content .director-data {
+        font-size: 14px;
+    }
+
+    .movie-detail-section .description {
+        margin-bottom: 24px;
+    }
+
+    .related-articles-section .arti-cat-tag {
+        padding: 4px 16px;
+    }
+
+    .related-articles-section .articles-md li:nth-child(even),
+    .related-articles-section .articles-md li:nth-child(odd) {
+        padding: 8px 0;
+        border-radius: var(--border-radius-4);
+    }
+
+    .related-articles-section .subtitle .sub-title-r {
+        display: none;
+    }
+
+    /* ----- actors list section ----- */
+    .actors-list-section .prev-btn,
+    .actors-list-section .next-btn {
+        display: none;
+    }
+
+    .actors-list-section .wrap {
+        max-width: 375px;
+        height: 278px;
+        overflow: auto;
+    }
+
+    .actors-list-section .wrap::-webkit-scrollbar {
+        display: none;
+    }
+
+    .actors-list-section .wrap .carousel-wrap {
+        width: 1120px;
+        transform: translateX(0px);
+    }
+
+    .actors-list-section .wrap .img-wrap {
+        width: 96px;
+        height: 224px;
+        margin: 0 0 8px 0;
+    }
+
+    .actors-list-section .carousel-wrap li.list-unstyled {
+        margin: 0 8px;
+    }
+
+    .actors-list-section .carousel-wrap li.list-unstyled:nth-child(1) {
+        margin: 0;
+    }
+
+    .actors-list-section .carousel-wrap li.list-unstyled:nth-child(2) {
+        margin-left: 0;
+    }
+
+    .actors-list-section .carousel-wrap .empty {
+        display: none;
+    }
+
+    .actors-list-section .actor-name {
+        text-align: left;
+    }
+
+    .actors-list-section .actor-overflow-418 {
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .actors-list-section .actor-name-tc1,
+    .actors-list-section .actor-name-en1,
+    .actors-list-section .actor-name-tc2,
+    .actors-list-section .actor-name-en2,
+    .actors-list-section .actor-name-tc3,
+    .actors-list-section .actor-name-en3,
+    .actors-list-section .actor-name-tc4,
+    .actors-list-section .actor-name-en4,
+    .actors-list-section .actor-name-tc5,
+    .actors-list-section .actor-name-en5,
+    .actors-list-section .actor-name-tc6,
+    .actors-list-section .actor-name-en6,
+    .actors-list-section .actor-name-tc7,
+    .actors-list-section .actor-name-en7,
+    .actors-list-section .actor-name-tc8,
+    .actors-list-section .actor-name-en8 {
+        opacity: var(--opacity-90);
+    }
+
+    .actors-list-section .character-name-tc1,
+    .actors-list-section .character-name-en1 {
+        display: none;
+    }
+
+    /* ----- movie stills ----- */
+    .movie-stills-carousel {
+        position: unset;
+        overflow: auto;
+    }
+
+    .movie-stills-carousel::-webkit-scrollbar {
+        display: none;
+    }
+
+    .movie-stills-section .movie-stills {
+        margin: 0;
+    }
+
+    .movie-stills-carousel .carousel-wrap {
+        width: 3040px;
+        display: flex;
+        justify-content: space-between;
+        transform: translateX(0px);
+        transition: .4s;
+    }
+
+    .movie-stills-carousel .carousel-wrap .img-wrap {
+        width: 288px;
+        height: 162px;
+        display: flex;
+        overflow: auto;
+    }
+
+    .movie-stills-carousel .carousel-wrap .img-wrap {
+        width: 288px;
+        height: 162px;
+        display: flex;
+        margin: 0;
+    }
+
+    .movie-stills-carousel .carousel-wrap .img-wrap {
+        filter: grayscale(0)
+    }
+}

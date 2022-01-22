@@ -1,0 +1,276 @@
+/* -----------------payment section----------------- */
+.payment-section {
+    margin-top: 280px;
+}
+
+.payment-section .fa-info-circle {
+    color: var(--brand-color);
+    cursor: pointer;
+}
+
+/* -----------------payment section l----------------- */
+.payment-section-l .body1-r {
+    opacity: var(--opacity-75);
+    margin-bottom: 80px;
+}
+
+.payment-section-l {
+    margin-top: 40px;
+}
+
+.payment-section-l .myticket {
+    position: relative;
+}
+
+.payment-section-l .ticket-img-wrap {
+    position: absolute;
+    max-width: 322px;
+    border-radius: 50px;
+    box-shadow: var(--box-shadow-black);
+}
+
+.payment-section-l .ticket-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.payment-section-l .poster-img-wrap {
+    width: 322px;
+    position: absolute;
+    top: 56px;
+    left: 0;
+}
+
+.payment-section-l .poster-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.payment-section-l .ticket-card {
+    width: 100%;
+}
+
+.payment-section-l .content {
+    position: absolute;
+    top: 24px;
+    left: 32px;
+    color: #121212;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.payment-section-l .content .body2-r {
+    opacity: var(--opacity-50);
+}
+
+.payment-section-l .content .section-header-b {
+    margin-bottom: 4px;
+}
+
+.payment-section-l .content .order-num {
+    color: rgba(18, 18, 18, 0.5);
+    margin-bottom: 256px;
+}
+
+.payment-section-l .content .title-en {
+    opacity: var(--opacity-50);
+}
+
+.payment-section-l .content .col-12 {
+    padding: 0;
+}
+
+.payment-section-l .content-row {
+    width: 256px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.payment-section-l .pg-rate {
+    padding: 4px 12px;
+    border-radius: var(--border-radius-50);
+    border: 1px solid rgba(18, 18, 18, 0.5);
+    color: rgba(18, 18, 18, 0.5);
+}
+
+.payment-section-l .content-row .mycinema .sub-title-b,
+.payment-section-l .content-row .myseat .sub-title-b {
+    line-height: 110%;
+}
+
+/* -----------------payment section r----------------- */
+.payment-section-r .detail-head,
+.payment-section-r .detail-head .detail-head-l,
+.payment-section-r .detail-inline,
+.payment-section-r .detail-inline .detail-inline-l,
+.payment-section-r .detail-fee,
+.payment-section-r .detail-total,
+.payment-section-r .detail-total .detail-total-l {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.payment-section-r .detail-head,
+.payment-section-r .detail-inline,
+.payment-section-r .detail-fee,
+.payment-section-r .detail-total {
+    padding: 12px 24px;
+}
+
+.payment-section-r .detail-head {
+    margin-bottom: 16px;
+    background-color: var(--bg-color);
+    border-radius: var(--border-radius-4);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.payment-section-r .detail-fee {
+    display: flex;
+    justify-content: end;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    padding-bottom: 24px;
+}
+
+.payment-section-r .detail-total {
+    padding-top: 24px;
+}
+
+.payment-section-r .detail-fee .body2-r,
+.payment-section-r .detail-total .body2-r {
+    opacity: var(--opacity-25);
+    margin-right: 20px;
+}
+
+.payment-section-r .detail-head .col-6,
+.payment-section-r .detail-head .col-4,
+.payment-section-r .detail-inline .col-6,
+.payment-section-r .detail-inline .col-4,
+.payment-section-r .detail-total .col-6,
+.payment-section-r .detail-total .col-4 {
+    padding: 0;
+}
+
+.payment-section-r-top,
+.payment-section-r-bottom {
+    background-color: rgba(32, 32, 32, 0.75);
+    border-radius: var(--border-radius-8);
+    box-shadow: var(--box-shadow-card-lg);
+}
+
+.payment-section-r-top {
+    padding: 40px 88px;
+}
+
+.payment-section-r-bottom {
+    /* padding 88px - 左右的 padding 16px */
+    padding: 40px 72px;
+}
+
+.payment-section-r-top {
+    margin-bottom: 32px;
+}
+
+.payment-section-r-bottom .credit-card input {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius-4);
+    width: 100%;
+    color: rgba(255,255,255,0.9);
+    border: none;
+    padding: 12px 24px;
+}
+
+.payment-section-r-bottom .credit-card .credit-card-subtitle:nth-child(n) {
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+}
+
+.payment-section-r .card-number,
+.payment-section-r .card-holder,
+.payment-section-r .card-extra-info {
+    margin-bottom: 32px;
+}
+
+/* 微調 Roboto 的 line-height */
+.payment-section-r .card-extra-info .ccv-code {
+    line-height: 144%;
+}
+
+.payment-section-r .e-invoice {
+    margin-top: 64px;
+}
+
+.payment-section-r .e-invoice .e-invoice-select {
+    margin-bottom: 32px;
+    padding: 0 16px;
+}
+
+.payment-section-r button {
+    padding: 0;
+    border: transparent;
+    width: 144px;
+    height: 48px;
+    margin-right: 0;
+}
+
+.payment-section select.custom-select {
+    background: url("images/icon_custom_select.svg") right 0.75rem center/12px 12px no-repeat;
+    border: transparent;
+    color: rgba(255,255,255,0.9);
+}
+
+.payment-section .form-group .form-control {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: rgba(255, 255, 255, 0.9);
+    height: 43px;
+}
+
+.payment-section .e-invoice-group1 {
+    width: 25%;
+    height: 43px;
+}
+
+.payment-section .e-invoice-group2 {
+    width: 70%;
+    height: 43px;
+}
+
+.payment-section-r .agreement-alert {
+    color: var(--brand-color);
+    margin-left: 12px;
+    margin-right: 4px;
+}
+
+.payment-section-r-bottom .agreement-check {
+    padding: 0 16px;
+}
+
+/* -----------------btn area----------------- */
+.payment-section-r .btn-area {
+    background-color: var(--brand-color);
+    box-shadow: var(--box-shadow-red);
+}
+
+.payment-section-r .btn-area .btn {
+    border-radius: var(--border-radius-50);
+    /* padding: 4px 64px; */
+    color: white;
+}
+
+.payment-section .ticket-wrap {
+    height: 500px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-section .myticket {
+    float: left;
+    margin: 20px 0 500px 0;
+}

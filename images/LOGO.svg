@@ -1,0 +1,32 @@
+<svg width="182" height="138" viewBox="0 0 182 138" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.25" d="M127.3 44.65L108.01 42.54L106.42 27.65L0 15L11.61 130.92L113.24 91.36L110.06 61.66L127.3 44.65Z" fill="url(#paint0_linear_1332_1568)"/>
+<path opacity="0.5" d="M160.98 36.8802L139.21 34.4902L137.41 17.6902L17.29 3.41016L30.4 134.26L145.11 89.6002L141.52 56.0702L160.98 36.8802Z" fill="url(#paint1_linear_1332_1568)"/>
+<path d="M181.01 38.62L165.97 27.97L164.08 15.03L37.5996 0L51.3996 137.76L172.18 90.75L169.26 58.71L181.01 38.62Z" fill="url(#paint2_linear_1332_1568)"/>
+<path d="M146.58 36.7392L134.88 36.1992L121.22 59.9992L98.0804 34.4792L75.8604 33.4492L81.8803 93.4692L105.5 87.5292L103.08 63.3092L118.53 78.3292L126.72 76.5692L130.17 69.8592L135.78 58.9592L137.96 79.3792L150.64 76.1892L146.58 36.7392Z" fill="black"/>
+<defs>
+<linearGradient id="paint0_linear_1332_1568" x1="0.777855" y1="73.0291" x2="127.662" y2="71.3287" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F53D3D"/>
+<stop offset="0.2586" stop-color="#F54040"/>
+<stop offset="0.472" stop-color="#F74A4A"/>
+<stop offset="0.6693" stop-color="#F95C5C"/>
+<stop offset="0.8557" stop-color="#FC7474"/>
+<stop offset="1" stop-color="#FF8C8C"/>
+</linearGradient>
+<linearGradient id="paint1_linear_1332_1568" x1="18.1688" y1="68.9101" x2="161.386" y2="66.9908" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F53D3D"/>
+<stop offset="0.2586" stop-color="#F54040"/>
+<stop offset="0.472" stop-color="#F74A4A"/>
+<stop offset="0.6693" stop-color="#F95C5C"/>
+<stop offset="0.8557" stop-color="#FC7474"/>
+<stop offset="1" stop-color="#FF8C8C"/>
+</linearGradient>
+<linearGradient id="paint2_linear_1332_1568" x1="38.5266" y1="68.9603" x2="181.394" y2="67.0456" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F53D3D"/>
+<stop offset="0.2586" stop-color="#F54040"/>
+<stop offset="0.472" stop-color="#F74A4A"/>
+<stop offset="0.6693" stop-color="#F95C5C"/>
+<stop offset="0.8557" stop-color="#FC7474"/>
+<stop offset="1" stop-color="#FF8C8C"/>
+</linearGradient>
+</defs>
+</svg>

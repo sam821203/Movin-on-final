@@ -1,0 +1,479 @@
+body {
+    background: url("images/forum_overview_page/bg_img.jpg") top center no-repeat;
+    background-size: contain;
+    background-color: var(--bg-color);
+    width: 100%;
+}
+
+.forum-cards-section .card-md,
+.forum-cat-section .card-md {
+    margin-bottom: 32px;
+}
+
+/* -----------------forum info section----------------- */
+.forum-info-section {
+    margin-top: 368px;
+    width: 100%;
+}
+
+.forum-info-section .main-header-b {
+    margin-bottom: 16px;
+}
+
+.forum-info-section .sub-title-r {
+    opacity: var(--opacity-75);
+}
+
+.forum-info-section .forum-info-title {
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.forum-info-section .forum-info-board {
+    width: 100%;
+    background-color: var(--bg-color);
+    padding: 88px 48px 32px 48px;
+    opacity: var(--opacity-75);
+    border-radius: 8px;
+    position: relative;
+    height: 326px;
+    overflow: auto;
+    box-shadow: var(--box-shadow-black-25);
+}
+
+.forum-info-section .board-title,
+.forum-info-section .board-content { width: 100%; }
+
+.forum-info-section .board-title .sub-title-m {
+    width: 100%;
+    text-align: center;
+    padding: 16px;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 8px 0 0 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.forum-info-section .board-content .sub-title-r {
+    margin-bottom: 32px;
+}
+
+.forum-info-section .board-content .body1-r {
+    padding-top: 16px;
+    border-top: 1px solid rgba(255,255,255,0.25);
+}
+
+/* -----------------forum cards section----------------- */
+.forum-cards-section .row1,
+.forum-cards-section .row2 {
+    margin-bottom: 32px;
+}
+
+.forum-cards-section .img-wrap {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: var(--border-radius-8);
+    box-shadow: var(--box-shadow-black);
+}
+
+.forum-cards-section .img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-radius: var(--border-radius-8);
+}
+
+.forum-cards-section .img-wrap .content {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    z-index: 1001;
+}
+
+.forum-cards-section .card-1,
+.forum-cards-section .card-2 {
+    max-width: 428px;
+    max-height: 244px;
+}
+
+.forum-cards-section .row3 .col-9 {
+    padding: 0;
+}
+
+.forum-cards-section .row3 .col-9 .col-12 {
+    padding: 0;
+    display: flex;
+}
+
+.forum-cards-section .inner-row1 {
+    margin-bottom: 32px;
+}
+
+/* 0115hover效果 */
+.forum-cards-section .card-1,
+.forum-cards-section .card-2,
+.forum-cards-section .card-3,
+.forum-cards-section .card-4,
+.forum-cards-section .card-5,
+.forum-cards-section .card-6,
+.forum-cards-section .card-7,
+.forum-cards-section .card-8,
+.forum-cards-section .card-9,
+.forum-cards-section .card-10
+ {
+    overflow: hidden;
+}
+
+.forum-cards-section .card-1 img,
+.forum-cards-section .card-2 img,
+.forum-cards-section .card-3 img,
+.forum-cards-section .card-4 img,
+.forum-cards-section .card-5 img,
+.forum-cards-section .card-6 img,
+.forum-cards-section .card-7 img,
+.forum-cards-section .card-8 img,
+.forum-cards-section .card-9 img,
+.forum-cards-section .card-10 img {
+    transition: .5s;
+}
+
+.forum-cards-section .card-1:hover img,
+.forum-cards-section .card-2:hover img,
+.forum-cards-section .card-3:hover img,
+.forum-cards-section .card-4:hover img,
+.forum-cards-section .card-5:hover img,
+.forum-cards-section .card-6:hover img,
+.forum-cards-section .card-7:hover img,
+.forum-cards-section .card-8:hover img,
+.forum-cards-section .card-9:hover img,
+.forum-cards-section .card-10:hover img {
+    filter: brightness(120%);
+    transform: scale(1.1);
+}
+
+.forum-cards-section .hover-gradient-card1 {
+    width: 100%;
+    height: 112px;
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(to bottom, rgba(254,80,81,0), rgba(254,80,81,0.75));
+    opacity: 0;
+    transition: ease-in .3s;
+    z-index: 999;
+}
+
+.forum-cards-section .hover-gradient-card2 {
+    width: 100%;
+    height: 112px;
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(to bottom, rgba(0,166,156,0), rgba(0,166,156,0.75));
+    opacity: 0;
+    transition: ease-in .3s;
+    z-index: 999;
+}
+
+.forum-cards-section .hover-gradient-card3 {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(to bottom, rgba(219,105,35,0), rgba(219,105,35,0.75));
+    opacity: 0;
+    transition: ease-in .3s;
+    z-index: 999;
+}
+
+.forum-cards-section .hover-gradient-card4 {
+    width: 100%;
+    height: 96px;
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(to bottom, rgba(109,190,78,0), rgba(109,190,78,0.75));
+    opacity: 0;
+    transition: ease-in .3s;
+    z-index: 999;
+}
+
+.forum-cards-section .hover-gradient-card5 {
+    width: 100%;
+    height: 96px;
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(to bottom, rgba(254,80,81,0), rgba(254,80,81,0.75));
+    opacity: 0;
+    transition: ease-in .3s;
+    z-index: 999;
+}
+
+.forum-cards-section .hover-gradient-card6 {
+    width: 100%;
+    height: 288px;
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(to bottom, rgba(105,69,229,0), rgba(105,69,229,0.75));
+    opacity: 0;
+    transition: ease-in .3s;
+    z-index: 999;
+}
+
+.forum-cards-section .hover-gradient-card7 {
+    width: 100%;
+    height: 144px;
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(to bottom, rgba(87,48,19,0), rgba(87,48,19,0.75));
+    opacity: 0;
+    transition: ease-in .3s;
+    z-index: 999;
+}
+
+.forum-cards-section .hover-gradient-card8 {
+    width: 100%;
+    height: 144px;
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(to bottom, rgba(8,107,234,0), rgba(8,107,234,0.75));
+    opacity: 0;
+    transition: ease-in .3s;
+    z-index: 999;
+}
+
+.forum-cards-section .hover-gradient-card9 {
+    width: 100%;
+    height: 144px;
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(to bottom, rgba(209,142,47,0), rgba(209,142,47,0.75));
+    opacity: 0;
+    transition: ease-in .3s;
+    z-index: 999;
+}
+
+.forum-cards-section .hover-gradient-card10 {
+    width: 100%;
+    height: 144px;
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(to bottom, rgba(120,126,52,0), rgba(120,126,52,0.75));
+    opacity: 0;
+    transition: ease-in .3s;
+    z-index: 999;
+}
+
+.forum-cards-section .card-1:hover .hover-gradient-card1,
+.forum-cards-section .card-2:hover .hover-gradient-card2,
+.forum-cards-section .card-3:hover .hover-gradient-card3,
+.forum-cards-section .card-4:hover .hover-gradient-card4,
+.forum-cards-section .card-5:hover .hover-gradient-card5,
+.forum-cards-section .card-6:hover .hover-gradient-card6,
+.forum-cards-section .card-7:hover .hover-gradient-card7,
+.forum-cards-section .card-8:hover .hover-gradient-card8,
+.forum-cards-section .card-9:hover .hover-gradient-card9,
+.forum-cards-section .card-10:hover .hover-gradient-card10 {
+    opacity: 1;
+} 
+
+/* -----------com-count----------- */
+.forum-cards-section .com-count {
+    border-radius: var(--border-radius-50);
+    padding: 4px 8px;
+    margin-left: 8px;
+}
+
+.forum-cards-section .com-1-count { background-color: #AE2B2C; }
+.forum-cards-section .com-2-count { background-color: #16CFC4; }
+.forum-cards-section .com-3-count { background-color: #FD8942; }
+.forum-cards-section .com-4-count { background-color: #2B6714; }
+.forum-cards-section .com-5-count { background-color: #B41127; }
+.forum-cards-section .com-6-count { background-color: #3F259A; }
+.forum-cards-section .com-7-count { background-color: #B57441; }
+.forum-cards-section .com-8-count { background-color: #6AABFF; }
+.forum-cards-section .com-9-count { background-color: #7D500F; }
+.forum-cards-section .com-10-count { background-color: #A6B126; }    
+
+
+.forum-cards-section .content .section-header-r {
+    margin-bottom: 4px;
+}
+
+.forum-cards-section .content .body1-b {
+    opacity: var(--opacity-75);
+}
+
+/* -------------------forum cat section-------------------- */
+.forum-cat-section {
+    width: 100%;
+}
+
+.forum-cat-section .img-wrap {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: var(--border-radius-8);
+    box-shadow: var(--box-shadow-black-25);
+}
+
+.forum-cat-section .img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    opacity: var(--opacity-50);
+    border-radius: var(--border-radius-8);
+    transition: .4s ease-in-out;
+}
+
+.forum-cat-section .img-wrap .content {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 50%;
+    background: rgba(18,18,18,0.75);
+    transform: translateX(-50%);
+}
+
+.forum-cat-section .img-wrap .content .section-header-r,
+.forum-cat-section .img-wrap .content .sub-title-m {
+    padding-top: 8px;
+    padding-bottom: 10px;
+    text-align: center;
+    opacity: var(--opacity-25);
+    transition: .4s ease-in-out;
+}
+
+.forum-cat-section .img-wrap:hover img {
+    opacity: 1;
+}
+
+.forum-cat-section .img-wrap:hover .section-header-r,
+.forum-cat-section .img-wrap:hover .content .sub-title-m {
+    opacity: var(--opacity-90);
+}
+
+.forum-cat-section .card-md:hover .img-wrap {
+    opacity: 1;
+}
+
+/* =================================== @media =================================== */
+/* ============================================================================== */
+
+/* ------------------------  小於 1920px  ------------------------*/
+@media screen and (max-width: 1920px) {
+    .forum-info-section {
+        margin-bottom: 48px;
+    }
+}
+
+/* ------------------------  小於 992px  ------------------------*/
+@media screen and (max-width: 992px) {
+    body {
+        background: url("images/forum_overview_page/bg_img_992_min.jpg") top center no-repeat;
+        background-size: contain;
+        background-color: var(--bg-color);
+    }
+}
+
+/* ------------------------  小於 768px  ------------------------*/
+@media screen and (max-width: 768px) {
+
+    /* 這裡強制將 .section-header-r 改為 字重500 */
+    .forum-cards-section .card-md .section-header-r { 
+        font-size: 20px; 
+        font-weight: 500;
+        margin-bottom: 6px;
+    }
+
+    .forum-cards-section .img-wrap .content {
+        bottom: 16px;
+        left: 16px;
+    }
+}
+
+/* ------------------------  小於 418px  ------------------------*/
+@media screen and (max-width: 418px) {
+    
+    .forum-info-section { margin-top: 96px; }
+
+    .forum-info-section .forum-info-board {
+        background-color: var(--bg-color);
+        padding: 72px 24px 24px 24px;
+        opacity: var(--opacity-75);
+        border-radius: 8px;
+        position: relative;
+        height: 326px;
+        overflow: auto;
+        box-shadow: var(--box-shadow-black-25);
+    }
+
+    .forum-info-section .board-content p.body1-r {
+        font-size: 0.875rem;
+    }
+
+    .forum-cards-section .card-md .section-header-r { 
+        font-weight: 400;
+        margin-bottom: 4px;
+        font-size: 14px;
+    }
+
+    .forum-cards-section .row.subtitle.g-subtitle-mb .col-12,
+    .forum-cat-section .row.subtitle.g-subtitle-mb .col-12,
+    .forum-cat-section .row .col-6 {
+        padding: 0;
+    }
+
+    .forum-cat-section .row .col-6:nth-child(even) {
+        padding-left: 8px;
+    }
+
+    .forum-cat-section .row .col-6:nth-child(odd) {
+        padding-right: 8px;
+    }
+
+
+    /* 將預設的 .body1-b 改為 .body2-m  */
+    .forum-cards-section .card-md .body1-b { 
+        font-weight: 500;
+        margin-bottom: 4px;
+        font-size: 12px;
+    }
+
+    .forum-cards-section .img-wrap .content {
+        bottom: 12px;
+        left: 12px;
+    }
+
+    .forum-cards-section .card-md,
+    .forum-cat-section .card-md {
+        margin-bottom: 16px;
+    }
+
+    .forum-cards-section .mycol-6.card-md:nth-child(even),
+    .forum-cat-section .mycol-6.card-md:nth-child(even) {
+        padding: 0 0 0 8px;
+    }
+
+    .forum-cards-section .mycol-6.card-md:nth-child(odd),
+    .forum-cat-section .mycol-6.card-md:nth-child(odd) {
+        padding: 0 8px 0 0;
+    }
+
+    .forum-cards-section .com-count {
+        border-radius: var(--border-radius-50);
+        padding: 2px 6px;
+        margin-left: 8px;
+    }
+
+    .forum-cards-section .content .caption-12 {
+        font-size: 11px;
+    }
+    
+    .forum-cat-section .card-md:hover .img-wrap,
+    .forum-cat-section .card-md:active .img-wrap {
+        opacity: 0.9;
+    }
+}
