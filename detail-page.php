@@ -296,33 +296,38 @@
                             <?php
                             $sql = "SELECT `movie_id`,`article_cat`,`title`,`spoiler_tag`,`created_at` FROM `spider_forum_article` WHERE `movie_id` = {$_GET['movie_id']} LIMIT 0,8";
                             $arr = $pdo->query($sql)->fetchAll();
-                            function time_tranx($the_time){  
-                                $now_time = date("Y-m-d H:i:s",time()+8*60*60);  
-                                $now_time = strtotime($now_time);  
-                                $show_time = strtotime($the_time);  
-                                $dur = $now_time - $show_time;  
-                                if($dur < 0){  
-                                     return $the_time;  
-                                }else{  
-                                     if($dur < 60){  
-                                      return $dur.'秒前';  
-                                     }else{  
-                                          if($dur < 3600){  
-                                           return floor($dur/60).'分鐘前';  
-                                          }else{  
-                                               if($dur < 86400){  
-                                                  return floor($dur/3600).'小時前';  
-                                               }else{  
-                                                    if($dur < 2678400){ //3天内  
-                                                         return floor($dur/86400).'天前';  
-                                                    }else{  
-                                                         return $the_time;  
-                                                    }  
-                                               }  
-                                         }  
-                                     }  
-                                }  
-                            } 
+                            function time_tranx($the_time)
+                            {
+                                $now_time = date("Y-m-d H:i:s", time() + 8 * 60 * 60);
+                                $now_time = strtotime($now_time);
+                                $show_time = strtotime($the_time);
+                                $dur = $now_time - $show_time;
+                                if ($dur < 0) {
+                                    return $the_time;
+                                } else {
+                                    if ($dur < 60) {
+                                        return $dur.'秒前';
+                                    } else {
+                                        if ($dur < 3600) {
+                                            return floor($dur / 60).'分鐘前';
+                                        } else {
+                                            if ($dur < 86400) {
+                                                return floor($dur / 3600).'小時前';
+                                            } else {
+                                                if ($dur < 604800) { 
+                                                    return floor($dur / 86400).'天前';
+                                                } else {
+                                                    if ($dur < 15552000) {
+                                                        return floor($dur / 604800).'週前';
+                                                    } else {
+                                                        return $the_time;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                             foreach ($arr as $objArt) {
                             ?>
                                 <div class="col-xl-6">
